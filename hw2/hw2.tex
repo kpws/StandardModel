@@ -76,7 +76,7 @@ Integrating $f_i(x,Q^2)$ gives the number of particle $i$ present in the proton.
 \begin{equation}
  n_i=\int_0^1x(g_i(x,Q^2)-g_{\bar{i}}(x,Q^2))\mathrm{d}x
 \end{equation}
-This is 0 by assumption for $s, c, b$ but not for $u, d$. This has been calculated numerically and the result is seen in Table \ref{q100}. The total charge and energy has been calculated using this and the result is seen in Table \ref{q100}.
+This is 0 by assumption for $s, c, b$ but not for $u, d$. This has been calculated numerically and the result is seen in Table \ref{q100}. The total charge and energy has been calculated using this and the result is seen in Table \ref{q100}. My code for the numerical calculations is available at \url{https://github.com/kpws/StandardModel}.
 \begin{table}[ht]
 \caption{Results for $Q^2=100 \mathrm{GeV}^2$}
 \label{q100}
@@ -162,12 +162,14 @@ Total & 2.9988 & 0.9995 & 1.0173
 The antiproton is the antiparticle to the proton. The PDFs are the same but for the antiparticles of the partons. So the $u$ PDF is that of $\bar{u}$ and so on.\\
 The $u$ and $d$-quarks have similar masses and the electromagnetic interaction is weak compared to the strong interaction which is isospin invariant. $u, \bar{u}$ and $d, \bar{d}$ can then be interchanged assuming isospin invariance and the neutron PDFs are obtained.
 \section{Question 4}
-The integral in the handwritten notes has been calculated numerically for different invariant masses and proton-proton center of mass energy. The result is seen in Figure \ref{cc}.
+The integral in the handwritten notes has been calculated numerically for different invariant masses and proton-proton center of mass energy. The result is seen in Figure \ref{cc}. My code for this is available at \url{https://github.com/kpws/StandardModel}.
 \begin{figure}
 \centering
 \includegraphics[width=11cm]{../cc.pdf}
 \caption{Differential cross-section calculated by numerical integration.}
 \label{cc}
 \end{figure}
-
+\section{Question 5}
+They have been looking for extra Z bosons by colliding protons with 8 TeV center of mass energy. They have measured what I plotted in \ref{cc}. They took more processes into account. They could exclude two models from having extra Z bosons of masses below about 2.4 TeV at confidence level 95 \%.\\
+If I were to search for an extra Z boson, then I would calculate the differential cross-section as above but with an extra contribution in M. This would give an extra peak that could be searched for in the experimental data. I would calculate how high this peak would be for different masses and then try to exclude it from existing over all measureable masses. I would try to exclude the standard model if it is impossible to exclude the boson at one of the measureable masses.
 \end{document}
